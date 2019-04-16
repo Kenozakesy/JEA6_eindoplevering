@@ -1,0 +1,19 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name>WebApp</display-name>
+  <welcome-file-list>
+    <welcome-file>welcome.jsp</welcome-file>
+  </welcome-file-list>
+
+    <!--  error not authorized page -->
+  <error-page>
+    <error-code>403</error-code>
+    <location>/not-authorized.html</location>
+  </error-page>
+  <error-page>
+    <error-code>401</error-code>
+    <location>/not-authorized.html</location>
+  </error-page>
+</web-app>
